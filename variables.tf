@@ -10,7 +10,7 @@ variable "location" {
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "(Required) Environment for Azure resources."
 }
 
@@ -23,7 +23,7 @@ variable "vnet_address_space" {
 variable "subnet_address_space" {
   type        = list(string)
   description = "(Optional) Address space for subnet, defaults to 10.0.0.0/24"
-  default = [ "10.0.0.0/24" ]
+  default     = ["10.0.0.0/24"]
 }
 
 variable "common_tags" {
@@ -33,13 +33,13 @@ variable "common_tags" {
 }
 
 variable "business_unit_tag" {
-  type = string
-  description = "(Optional) BU tag to apply to all resources."
-  default = null
+  type        = string
+  description = "(Optional) Business unit tag to apply to all resources."
+  default     = null
 }
 
 variable "organization_tag" {
-  type = string
+  type        = string
   description = "(Optional) Org tag to apply to all resources."
-  default = null
+  default     = null
 }
