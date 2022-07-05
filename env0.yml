@@ -3,5 +3,5 @@ version: 1
 deploy:
   steps:
     terraformInit:
-      before:
-        - terraform fmt -check
+      after:
+        - terraform validate
